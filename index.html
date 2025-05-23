@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركه ميكانو</title>
+    <meta name="author" content="omar and ali">
+    <meta name="description" content="شركة ثريا لخدمات الروبوتات والمواقع والتصميم">
+    <meta name="keywords" content="روبوت, مواقع, تصميم, تصميم لوجو, تصميم مواقع, شركة ميكانو">
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <!-- فافيكون لعلامة التبويب -->
+    <link rel="icon" href="logo.jpeg" type="image/jpg">
+
+    <!-- بيانات منظمة لإعلام جوجل بالشعار -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "شركة ميكانو",
+      "url": "https://www.example.com",
+      "logo": "https://www.example.com/logo.png"
+    }
+    </script>
+
+    <style>
+	
+        body {
+            font-family: cairo, sans-serif;
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .home-bg {
+            background-image: url(bag.jpg);
+            margin: 0;
+             padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+
+        }
+
+        nav {
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: darkgreen;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #c0c0c0;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+		
+		
+		@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+  section {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+form input, form textarea {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+section h2 {
+    animation: slideDown 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+section {
+    
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+        section {
+            padding: 40px;
+            margin-top: 30px;
+            border-radius: 10px;
+            display: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            opacity: 0.6;
+            z-index: 0;
+            animation: moveBg 30s linear infinite;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .robots::before {
+            background-image: url(robot.jpeg);
+            opacity: 0.9;
+        }
+
+        .web-dev::before {
+            background-image: url(web.jpg);
+            opacity: 0.9;
+        }
+
+.problem::before {
+    background-image: url(problem.jpeg); /* حط اسم الصورة اللي تبغاها هنا */
+    opacity: 0.9;
+}
+       
+			
+        section * {
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes moveBg {
+            0% { background-position: 100% 50%; }
+            50% { background-position: 0% 0%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            color: darkgreen;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            width: 300px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .intro {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 700px;
+            background-color: #dfe6e9;
+            border-radius: 10px;
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            background-color: crimson;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="home-bg">
+
+    <h1>شركة ميكانو</h1>
+
+    <div class="intro">
+        <p>شركة ميكانو هي شركة متخصصة في تصنيع الروبوتات وتطوير المواقع الإلكترونية وتصميم الأعمال الفنية المبدعة. نقدم لك خدمات مبتكرة وذات جودة عالية لتلبية احتياجاتك بأحدث التقنيات. نحن هنا لتحويل أفكارك إلى واقع ملموس من خلال العمل معك خطوة بخطوة لضمان تقديم أفضل الحلول التي تحقق لك النجاح والتطور في مجالك.</p>
+    </div>
+
+    <nav>
+        <a href="javascript:void(0);" onclick="showSection('robots')">قسم تصنيع الروبوتات</a>
+        <a href="javascript:void(0);" onclick="showSection('web-dev')">قسم تصنيع المواقع</a>
+		<a href="javascript:void(0);" onclick="showSection('problem')">قسم الشكاوي</a>
+    </nav>
+
+    <section class="robots" id="robots">
+        <h2>قسم تصنيع الروبوتات</h2>
+        <p style="font-weight: 900; color:white font-size:large; opacity: 0.9;">
+      نحن في قسم تصنيع الروبوتات نعمل على دعم الطلاب ومساعدتهم في بناء مشاريعهم الخاصة.
+
+نساعد الطلاب في تعلم برمجة المتحكمات مثل Arduino وESP32، ونوجههم خطوة بخطوة لاختيار القطع الإلكترونية المناسبة مثل الحساسات والمحركات والأسلاك ولوحات التجربة.
+
+سواء كنت مبتدئًا أو لديك فكرة مشروع وتريد تنفيذها، فنحن نقدم لك:
+
+شرح مبسّط لطريقة البرمجة.
+
+قائمة بالقطع التي تحتاجها لمشروعك.
+
+دعم فني إذا واجهت أي مشكلة أثناء العمل.
+
+
+هدفنا أن نجعل من فكرة مشروعك واقعاً يعمل بفعالية، بأقل تكلفة وأفضل أداء.
+
+        </p>
+<h3>استمارة تواصل قسم الروبوتات</h3>
+
+<form action="mailto:mikanorobot@gmail.com" method="post" enctype="text/plain">
+  <input type="hidden" name="section" value="robots">
+  
+  <label for="name">الاسم:</label><br>
+  <input type="text" id="name" name="الاسم" required><br><br>
+
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" id="email" name="البريد الإلكتروني"><br><br>
+
+  <label for="message">الرسالة:</label><br>
+  <textarea id="message" name="الرسالة" rows="5" required></textarea><br><br>
+<h3 style="font-size: x-large;">للتواصل عبر الواتس 212707700230</h3>
+  <button type="submit">إرسال</button>
+</form>
+<h2>التواصل على عبر الاستمارة فقط من الهاتف للتواصل عبر الكمبيوتر الرجاء التواصل على رقم الواتس</h2>
+<button class="back-button" onclick="goHome()">العودة إلى الصفحة الرئيسية</button>
+</section>
+    <section class="web-dev" id="web-dev">
+        <h2>قسم تصنيع المواقع</h2>
+        <p style="font-size: x-large; font-weight: 900; color:black;opacity: .9;">
+		في قسم تصنيع المواقع، نحن نقدم لك حلولاً متكاملة لبناء مواقع إلكترونية مبتكرة وفعالة. سواء كنت بحاجة إلى موقع شخصي، تجاري، أو حتى متجر إلكتروني، فريقنا المختص يستخدم أحدث تقنيات تصميم الويب من HTML وCSS وJavaScript لضمان تقديم موقع قوي وسهل الاستخدام. نركز على توفير تجربة مستخدم متميزة مع تصميم جذاب يتناسب مع جميع الأجهزة والمنصات. نهتم بشكل خاص بسرعة تحميل المواقع وكفاءتها لضمان تقديم تجربة تصفح سلسة وفعالة للمستخدمين. نحن نحرص على أن يكون لكل موقع نطوره ذو قيمة عالية ويحقق أهداف عملك بدقة. بدءًا من التصاميم التفاعلية وصولاً إلى الحلول البرمجية المعقدة، نحن نقدم لك كل ما تحتاجه لضمان نجاح موقعك في العالم الرقمي
+        </p>
+<h3>استمارة تواصل قسم المواقع</h3>
+<form action="mailto:mikanoweb@gmail.com" method="post" enctype="text/plain">
+  <input type="hidden" name="section" value="web">
+  
+  <label for="name">الاسم:</label><br>
+  <input type="text" id="name" name="الاسم" required><br><br>
+
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" id="email" name="البريد الإلكتروني"><br><br>
+
+  <label for="message">الرسالة:</label><br>
+  <textarea id="message" name="الرسالة" rows="5" required></textarea><br><br>
+<h3 style="color: blue; font-size: x-large;">للتواصل على الواتس 97439941798</h3>
+
+  <button type="submit">إرسال</button>
+</form>
+<h2 >التواصل على عبر الاستمارة فقط من الهاتف للتواصل عبر الكمبيوتر الرجاء التواصل على رقم الواتس</h2>
+
+<button class="back-button" onclick="goHome()">العودة إلى الصفحة الرئيسية</button>
+</section>
+<section class="problem" id="problem">
+
+        <h2>قسم الشكاوي</h2>
+        <p style="font-size: x-large; font-weight: 900; color:opacity:.9;">
+		نسعد بخدمتكم، ونؤمن أن ملاحظاتكم وشكاواكم تساهم في تطوير جودة خدماتنا. إذا واجهتم أي مشكلة أو تجربة غير مرضية، يرجى مشاركتنا التفاصيل لنتمكن من خدمتك بشكل أفضل. ولو اردت التواصل مباشره تواصل معنا عل الرقم التالي 97439941798
+	</p>
+<h3>استمارة تواصل قسم الشكاوي</h3>
+<form action="mailto:mikanoproblem@gmail.com" method="post" enctype="text/plain">
+  <input type="hidden" name="section" value="problem">
+  
+  <label for="name">الاسم:</label><br>
+  <input type="text" id="name" name="الاسم" required><br><br>
+
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" id="email" name="البريد الإلكتروني"><br><br>
+
+  <label for="phone">رقم الهاتف:</label><br>
+  <input type="tel" id="phone" name="رقم الهاتف"><br><br>
+
+  <label for="message">الرسالة:</label><br>
+  <textarea id="message" name="الرسالة" rows="5" required></textarea><br><br>
+
+  <button type="submit">إرسال</button>
+</form>
+<button class="back-button" onclick="goHome()">العودة إلى الصفحة الرئيسية</button>
+</section>
+    <script>
+        function showSection(sectionId) {
+            // إخفاء كل الأقسام
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+
+            // إخفاء مقدمة الصفحة الرئيسية
+            document.querySelector('.intro').style.display = "none";
+
+            // إزالة خلفية الصفحة الرئيسية
+            document.body.classList.remove("home-bg");
+
+            // عرض القسم المطلوب
+            const activeSection = document.getElementById(sectionId);
+            activeSection.style.display = "block";
+			    // بعد عرض القسم مباشرة
+const heading = activeSection.querySelector('h2');
+if (heading) {
+    heading.style.animation = "slideDown 0.6s ease forwards";
+}
+				
+activeSection.style.display = "block";
+activeSection.style.opacity = 0;
+activeSection.style.animation = "fadeIn 0.5s forwards";
+        }
+
+        function goHome() {
+            // إخفاء كل الأقسام
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = "none";
+				
+            });
+
+            // عرض المقدمة مرة أخرى
+            document.querySelector('.intro').style.display = "block";
+
+            // إعادة الخلفية للصفحة الرئيسية
+            document.body.classList.add("home-bg");
+        }
+		
+    </script>
+
+</body>
+</html>
